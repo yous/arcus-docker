@@ -17,13 +17,13 @@ docker pull yous/arcus
 
 ## Usage
 
-```
+``` sh
 docker run -i -t yous/arcus:latest
 ```
 
 ## Quick Start
 
-```
+``` sh
 docker run -i -t yous/arcus:latest
 ```
 
