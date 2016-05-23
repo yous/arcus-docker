@@ -1,9 +1,10 @@
 FROM centos:centos6
 MAINTAINER Chayoung You <yousbe@gmail.com>
 
-RUN yum install -y gcc gcc-c++ autoconf automake libtool pkgconfig cppunit-devel python-setuptools python-devel
-RUN yum install -y java-1.7.0-openjdk-devel
-RUN yum install -y git subversion wget curl nc
+RUN yum update -y && yum clean all
+RUN yum install -y gcc gcc-c++ autoconf automake libtool pkgconfig cppunit-devel python-setuptools python-devel && yum clean all
+RUN yum install -y java-1.7.0-openjdk-devel && yum clean all
+RUN yum install -y git subversion wget curl nc && yum clean all
 
 RUN useradd arcus
 RUN git clone https://github.com/naver/arcus.git /arcus
