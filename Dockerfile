@@ -1,7 +1,7 @@
 FROM centos:centos6
 MAINTAINER Chayoung You <yousbe@gmail.com>
 
-RUN yum update -y && yum clean all
+RUN yum check-update && yum clean all
 RUN yum install -y gcc gcc-c++ autoconf automake libtool pkgconfig cppunit-devel python-setuptools python-devel && yum clean all
 RUN yum install -y java-1.7.0-openjdk-devel && yum clean all
 RUN yum install -y git subversion wget curl nc && yum clean all
