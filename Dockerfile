@@ -21,7 +21,7 @@ RUN tar xf apache-ant-1.9.3-bin.tar.gz
 RUN ln -s apache-ant-1.9.3 ant
 RUN rm apache-ant-1.9.3-bin.tar.gz
 
-ENV JAVA_HOME /usr/lib/jvm/java-1.7.0-openjdk-1.7.0.101.x86_64
+ENV JAVA_HOME /usr/lib/jvm/java-1.7.0-openjdk.x86_64
 ENV ANT_HOME /home/arcus/vendor/ant
 ENV PATH $JAVA_HOME/bin:$ANT_HOME/bin:$PATH
 
